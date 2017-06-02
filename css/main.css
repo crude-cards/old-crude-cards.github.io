@@ -1,0 +1,108 @@
+body {
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #212121;
+}
+
+#logo {
+	width: 300px;
+	max-width: 100%;
+}
+
+.button {
+	background: #212121;
+	font-weight: bold;
+	color: white;
+	display: inline-block;
+	padding: 16px;
+	font-size: 18px;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: 50ms background, 50ms transform;
+	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
+ul#icons {
+	padding: 0;
+	list-style: none;
+	font-size: 36px;
+	text-align: right;
+	padding: 0 1rem;
+}
+
+ul#icons li {
+	display: inline-block;
+	margin-left: 16px;
+}
+
+ul#icons li a {
+	color: #eee;
+}
+
+ul#icons li a:hover {
+	color: white;
+}
+
+.button:hover {
+	transform: scale(1.05);
+}
+
+.button:active {
+	transform: scale(0.95);
+}
+
+footer {
+	margin-top: 8rem;
+	padding: 3rem 1rem;
+	background: #212121;
+	color: #aaa;
+}
+
+footer ul {
+	padding: 0;
+	list-style: none;
+}
+
+footer ul li {
+	display: inline;
+	margin: 8px;
+}
+
+footer ul li a {
+	color: #888;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	color: #aaa;
+}
+
+#page {
+	text-align: center;
+	height: 100%;
+	margin: 0 auto;
+	overflow: auto;
+	background: linear-gradient(#039BE5, #01579B);
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+@media screen and (max-width: 768px) {
+	ul#icons {
+		margin: 1rem;
+	}
+}
