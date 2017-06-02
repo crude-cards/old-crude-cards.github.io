@@ -118,6 +118,10 @@ footer ul li a:hover {
 	ul#icons {
 		padding: 1rem;
 	}
+
+	#mainSlide {
+		padding: 4rem 0;
+	}
 	
 	h1 {
 		font-size: 24px;

@@ -1,8 +1,8 @@
 {
   "short_name": "Crude Cards",
   "name": "Crude Cards",
-	"background_color": "#C41F52",
-	"theme_color": "#C41F52",
+	"background_color": "#BF360C",
+	"theme_color": "#BF360C",
 	"display": "standalone",
   "icons": [
     {
