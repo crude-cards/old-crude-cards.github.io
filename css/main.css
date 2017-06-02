@@ -1,3 +1,7 @@
+html {
+	margin: 0;
+}
+
 body {
 	margin: 0;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -23,11 +27,9 @@ body {
 }
 
 ul#icons {
-	padding: 0;
 	list-style: none;
 	font-size: 36px;
-	text-align: right;
-	padding: 0 1rem;
+	margin: 0;
 }
 
 ul#icons li {
@@ -48,24 +50,24 @@ ul#icons li a:hover {
 }
 
 .button:active {
-	transform: scale(0.95);
+	transform: scale(1);
 }
 
 footer {
-	margin-top: 8rem;
-	padding: 3rem 1rem;
+	padding: 0.5rem 1rem;
 	background: #212121;
 	color: #aaa;
 }
 
 footer ul {
-	padding: 0;
+	padding: 1rem;
+	margin: 0;
 	list-style: none;
 }
 
 footer ul li {
 	display: inline;
-	margin: 8px;
+	margin: 0 8px;
 }
 
 footer ul li a {
@@ -82,12 +84,23 @@ footer ul li a:hover {
 	height: 100%;
 	margin: 0 auto;
 	overflow: auto;
-	background: linear-gradient(#039BE5, #01579B);
+}
+
+#mainSlide {
+	padding: 8rem 0;
+	/* thanks mat <3 */
+	background: linear-gradient(#FF5722, #BF360C);
+}
+
+#about {
+	background: #111;
+	color: white;
+	padding: 2rem;
 }
 
 .container {
 	width: 100%;
-	max-width: 1200px;
+	max-width: 1000px;
 	margin: 0 auto;
 }
 
@@ -103,6 +116,18 @@ footer ul li a:hover {
 
 @media screen and (max-width: 768px) {
 	ul#icons {
-		margin: 1rem;
+		padding: 1rem;
+	}
+	
+	h1 {
+		font-size: 24px;
+	}
+
+	#about {
+		padding: 8px;
+	}
+
+	p {
+		font-size: 18px;
 	}
 }
