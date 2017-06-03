@@ -22,7 +22,7 @@ body {
 	font-size: 18px;
 	border-radius: 50px;
 	cursor: pointer;
-	transition: 50ms background, 50ms transform;
+	transition: 50ms transform;
 	-webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
 
@@ -38,7 +38,7 @@ ul#icons li {
 }
 
 ul#icons li a {
-	color: #eee;
+	color: #ddd;
 }
 
 ul#icons li a:hover {
@@ -50,7 +50,7 @@ ul#icons li a:hover {
 }
 
 .button:active {
-	transform: scale(1);
+	transform: scale(0.95);
 }
 
 footer {
@@ -117,6 +117,14 @@ footer ul li a:hover {
 @media screen and (max-width: 768px) {
 	ul#icons {
 		padding: 1rem;
+	}
+
+	.button:hover {
+		transform: initial;
+	}
+
+	.button:active {
+		transform: scale(0.95);
 	}
 
 	#mainSlide {
