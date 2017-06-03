@@ -71,7 +71,8 @@ footer ul li {
 }
 
 footer ul li a {
-	color: #888;
+	font-weight: bold;
+	color: #999;
 	text-decoration: none;
 }
 
@@ -84,6 +85,20 @@ footer ul li a:hover {
 	height: 100%;
 	margin: 0 auto;
 	overflow: auto;
+}
+
+p.license {
+	color: #777;
+	margin-bottom: 0;
+}
+
+p.license a {
+	color: #888;
+	text-decoration: none;
+}
+
+p.license a:hover {
+	color: #aaa;
 }
 
 #mainSlide {
