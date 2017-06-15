@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Sign up, dumbass</title>
+	</head>
+	<body>
+		<h1>FAQ: Why does this look ugly?</h1>
+		<p>Why do <em>you</em> look ugly?</p>
+		<hr>
+		<a href="#" onclick="thing()">Sign up!</a>
+		<hr>
+		<div id="data"></div>
+		<script>
+			function thing() {
+				window.open(
+					'https://discordapp.com/oauth2/authorize?client_id=323422533112037377&scope=identify&redirect_uri=http://127.0.0.1:8080/verify.html&response_type=code',
+					'oauth',
+					'width=450,height=500');
+			}
+			window.gotResponse = function(t) {
+				data = JSON.parse(t);
+				document.getElementById('data').innerHTML = `Signed up as <b>${data.user.username}</b>, user ID ${data.user.id}`;
+			}
+		</script>
+	</body>
+</html>
