@@ -19,7 +19,7 @@
 			}
 			window.gotResponse = function(t) {
 				data = JSON.parse(t);
-				document.getElementById('data').innerHTML = `Signed up as <b>${data.user.username}</b>, user ID ${data.user.id}`;
+				document.getElementById('data').innerHTML = `Signed up as <b>${data.user.username}</b>, user ID ${data.user.id}, token ${data.token}`;
 			}
 		</script>
 	</body>
